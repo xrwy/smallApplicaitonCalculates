@@ -1,4 +1,5 @@
-def ort():
-    print("Hesaplandı")
+deger = ["furkan","eray"]  
 
-ort() 
+with open("d","w") as f:
+    f.readlines(deger) 
+    print(f.read())  
