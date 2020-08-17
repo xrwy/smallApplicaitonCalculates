@@ -10,6 +10,8 @@ def okuma():
     if os.path.isfile("d.txt"):
         with open("d.txt","r") as yazdir:
             print(yazdir.read())   
+            
+            print("Kelime Listesi Oluşturuldu.")
 
 okuma()        
 
