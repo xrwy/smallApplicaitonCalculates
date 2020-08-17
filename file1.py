@@ -1,1 +1,4 @@
-print("Test")
+def ort():
+    print("Hesaplandı")
+
+ort() 
