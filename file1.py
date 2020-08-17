@@ -9,9 +9,9 @@ yazdir()
 def okuma():
     if os.path.isfile("d.txt"):
         with open("d.txt","r") as yazdir:
-            print(yazdir.read())   
-            
-            print("Kelime Listesi Oluşturuldu.")
+            return yazdir.read()
 
-okuma()        
+print(okuma())        
+
+
 
