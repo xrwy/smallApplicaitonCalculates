@@ -1,11 +1,15 @@
-import os
-
 def yazdir(): 
     with open("d.txt","w") as f:
-        f.writelines(["\nfurkan \n","eray\n","Ömer\n","frkn123 \n","ery893243 \n",
-        "f32pw862 \n","ffesj\n","sfjbsfsef\n","7y84395 \n","89765^+' \n"]) 
+        liste = ["\nfurkan ","eray","Ömer","frkn123 ","ery893243 ",
+        "f32pw862 ","ffesj","sfjbsfsef","7y84395","89765^+' "]
+        for i in liste:
+            f.writelines(i+"\n")
+        
+        for i in range(len(liste)):
+            f.write(liste[i]+ "\n")  
         
 yazdir()   
+
 
 def okuma():
     if os.path.isfile("d.txt"):
@@ -13,3 +17,5 @@ def okuma():
             return yazdir.read()
 
 print("Word List :", okuma())             
+
+print("İkiside oluyor en başta yaptığımda oluyor.")
