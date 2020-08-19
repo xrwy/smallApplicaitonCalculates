@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Exercise</title>
+</head>
+<body>
+    <script>
+        function hesap()
+        {
+            var value,valuee;
+            value = parseInt(document.getElementById("data").value);
+            valuee = parseInt(document.getElementById("dataa").value);
+            result = parseFloat(value * (valuee/100)) 
+            return document.getElementById("result").value = result; 
+        } 
+    </script>
+    <style>
+        .kutu
+        {
+            width: 520px;
+            height: 430px;
+            margin-left: 45px;
+            margin-top: 45px;
+        }
+        .hov:hover
+        {
+            background-color:purple
+        }
+        .hovv:hover
+        {
+            background-color: purple;
+        }
+    </style>
+    <div style="float: left;">
+        
+        <form class="k">
+            
+            <fieldset style="margin-left:75px;width:700px;height: 403px;margin-top: 75px;border: 2px black solid;">
+                
+                <legend style="font-size: 20px;font-weight: bold;background-color:lightgrey;border-radius: 8px;height: 35px;padding-top: 10px;padding-left:15px;width: 222px;">Yüzde Hesaplama Aracı</legend>
+    
+                <p style="margin-top: 20px;font-family:'Times New Roman', Times, serif;font-size: 20px;"><b style="color: red;">*</b> Doldurulması Zorunlu Alanlar</p>
+
+                <p style="font-weight: bold;"> <b style="color: red;"> *</b> Operation <select style="width: 400px;margin-left: 15px;height: 35px;"><option>A sayısının %B'si kaçtır ?</option></select></p> 
+                <p style="font-weight: bold;"><b style="color: red;"> *</b>A Number : <input style="width:65px;height:25px;" type="text" id="data"/> Örn. 1260,50<p>
+                <p style="font-weight: bold;"><b style="color: red;"> *</b>A Number : <input style="width:65px;height:25px;" type="text" id="dataa"/> Örn. 110,75<p> 
+                <p style="font-weight: bold;margin-left: 250px;"><b style="color: red;"> *</b>Result : <input style="width:65px;height:25px;margin-left:29px ;" type="text" id="result" readonly/> <p>
+                <p style="font-weight: bold;margin-left: 120px;"> <input class="hov" style="margin-left: 3px;width:120px;height:42px;border-radius: 6px;margin-top: 15px;background-color:royalblue;color: white;font-size: 16px;" type="button" value="Hesapla" onclick="hesap();"/> <input  class="hovv"  style="margin-left: 270px;width:120px;height:42px;border-radius: 6px;margin-top: 15px;background-color:lightgrey;color:black;font-weight: bold;font-size: 16px;" type="reset" value="Temizle"/> </p>
+            
+            </fieldset>
+   
+        </form> 
+    
+    </div>
+
+    
+
+</body>
+</html>
