@@ -1,6 +1,6 @@
 def yazdir(): 
     with open("d.txt","w") as f:
-        liste = ["\nfurkan ","eray","Ömer","frkn123 ","ery893243 ",
+        liste = ["\nhello","system","beatiful",
         "f32pw862 ","ffesj","sfjbsfsef","7y84395","89765^+' "]
         for i in liste:
             f.writelines(i+"\n")
@@ -18,4 +18,4 @@ def okuma():
 
 print("Word List :", okuma())             
 
-print("İkiside oluyor en başta yaptığımda oluyor.")
+
